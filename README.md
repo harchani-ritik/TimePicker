@@ -1,2 +1,2 @@
-# TimePicker-1
+# TimePicker
 A simple application to change the system time.
