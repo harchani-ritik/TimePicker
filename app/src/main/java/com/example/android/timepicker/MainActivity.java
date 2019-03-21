@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        timePicker1=findViewById(R.id.timePicker1);
-        time=findViewById(R.id.textView1);
+        timePicker1=(TimePicker)findViewById(R.id.timePicker1);
+        time=(TextView)findViewById(R.id.textView1);
         calendar= Calendar.getInstance();
         int hour=calendar.get(Calendar.HOUR_OF_DAY);
         int min=calendar.get(Calendar.MINUTE);
