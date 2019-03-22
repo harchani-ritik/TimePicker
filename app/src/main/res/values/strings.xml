@@ -5,6 +5,7 @@
     <string name="time_picker_example">Time Picker Example</string>
     <string name="time_pick">Pick the time and press save button</string>
     <string name="time_save">Save</string>
-    <string name="time_selected">Hi</string>
+    <string name="time_selected"></string>
     <string name="time_current">The time is:</string>
+    <string name="time_set">Time Set!</string>
 </resources>
