@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView time;
     private Calendar calendar;
     private String format="";
-
+    private Toast toast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         int hour=timePicker1.getCurrentHour();
         int min=timePicker1.getCurrentMinute();
         showTime(hour,min);
+        toast=Toast.makeText(this,R.string.time_set,Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void showTime(int hour,int min)
     {
